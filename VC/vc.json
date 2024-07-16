@@ -1,38 +1,44 @@
 {
-    "@context": [
-        "https://www.w3.org/2018/credentials/v1",
-        "https://holashchand.github.io/test_project/insurance-context.json",
-        "https://w3id.org/security/suites/ed25519-2020/v1"
+  "id": "did:rcw:6658d183-cf61-4c19-8b6b-8d619bb032be",
+  "type": [
+    "VerifiableCredential",
+    "LifeInsuranceCredential",
+    "InsuranceCredential"
+  ],
+  "proof": {
+    "type": "Ed25519Signature2020",
+    "created": "2024-07-16T07:03:53Z",
+    "proofValue": "z5NLgVW5use9KX74vtAmq5MqBB6SJ8ziX3QEM7zDhyavQMX2SLs7cDjQiWeoGxF22vqQwYY9SejQe19qcqeMDF3mN",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:web:api.dev1.mosip.net:identity-service:8ebda1d0-665b-4bb7-abc7-d4bf56b6ee09#key-0"
+  },
+  "issuer": "did:web:api.dev1.mosip.net:identity-service:8ebda1d0-665b-4bb7-abc7-d4bf56b6ee09",
+  "@context": [
+    "https://www.w3.org/2018/credentials/v1",
+    "https://holashchand.github.io/test_project/insurance-context.json",
+    {
+      "LifeInsuranceCredential": {
+        "@id": "InsuranceCredential"
+      }
+    },
+    "https://w3id.org/security/suites/ed25519-2020/v1"
+  ],
+  "issuanceDate": "2024-07-16T07:03:52.723Z",
+  "expirationDate": "2024-08-15T07:03:52.617Z",
+  "credentialSubject": {
+    "id": "did:jwk:eyJrdHkiOiJSU0EiLCJlIjoiQVFBQiIsInVzZSI6InNpZyIsImtpZCI6IktaMVhzWVdpZ05Dclc1SXg1aUpPYU5LbjJGWmdLcnZNMEpEdWg4QVFNM1UiLCJhbGciOiJSUzI1NiIsIm4iOiJubnFBZWhzdFZTejZma2ZTSUI3TmxwemVmU2VLcmNTWVlCRWRNUTRaXzUySUJIdFFPQVVyU0FvNm5hbzd3ZXQyU2REMTFoRDloRlNqSE9kMHJKaXNNcEtJNnRMME9mY2lTU09HQ29UWU5PTTh0amhhVmozcWZHSnZzQzNHYTFITVdZNEtRb3lOSDVfcWZZMXdwMUp4WTE5cUF1dTJycHF5WmpYSHVZUDU1eVFJS3c5MDBBdW93eXBIeEdINWpfQlEwb1RtX0pVX3paSDU0MDduLWlRZDlhNmlMRTlZZWZ6a2l2LWd3akFHS0s3T3lFNUx1Z0ZqVXhoRHZqRFh3NlV1cDd6S0N0MWNaWU9xa3JpcEtPVmgwNEtaZ1BIRWg5bG5VOXhrd0JaZEQ0Mlc4N1FpYUZfWDNGZkFQcWItOENiOTMwcjhERzhmaFZSWjJWNmNuczRMQ1EifQ==",
+    "dob": "1991-08-13",
+    "email": "abhishek@gmail.com",
+    "gender": "Male",
+    "mobile": "0123456789",
+    "benefits": [
+      "Critical Surgery",
+      "Full body checkup"
     ],
-    "credentialSubject": {
-        "id": "did:jwk:eyJrdHkiOiJSU0EiLCJlIjoiQVFBQiIsInVzZSI6InNpZyIsImFsZyI6IlJTMjU2IiwibiI6InRBU0M3Rk9sMWNqcVo2Tk9CREVJeWhUem1GVW1hZTlpbEtNVFVRMXFYNEJwRGU4WHFIS3VBU2RCa0lEdkNoZ3hkMU5iV0FQbl80QTBYMkg4X0E3SlVoWHBwdmFnUTZvQ0Q2OHRSbElXZ2g5eDlwakt1WkNjR0QtSEdiRU1jWS1zeUNLaXZNYkRIVTJvbHc1aFIxdV9PQ0hEa19UVkZ3NVc3amtmck0yeXNCeWdEX3k0UllmWWwtWURJZlI0aDZSemN6cTVvVndTVVpQdjBieTFiR0lRSHdYMWVHWFB3MGhoR29LVTlTd2RHLWpuRzEwNDFiY05xMEdqTFUwYkhPbndnRDVYWFRvcFNweHlaTl80bjY0akZSaENMNEZkSDRSM3pYb1pCVnM5LWFxY3BBeTRBZGtDMWNEUXRqOXBsMkpBTjRSei1XWEd5VEdsb1dSQ0FwZVpFUSJ9",
-        "dob": "2000-01-26",
-        "email": "tgs@gmail.com",
-        "gender": "Male",
-        "mobile": "0123456789",
-        "benefits": [
-            "Critical PSUT",
-            "Hepatitas PSUT"
-        ],
-        "fullName": "TGSStudio",
-        "policyName": "Sunbird Insurenc Policy",
-        "policyNumber": "55555",
-        "policyIssuedOn": "2023-04-20",
-        "policyExpiresOn": "2033-04-20"
-    },
-    "expiration_date": "2024-07-24T05:59:54.023Z",
-    "id": "did:rcw:e5bd5b63-99dd-4218-ba8a-04fa04a93e7f",
-    "issuanceDate": "2024-06-24T05:59:54.037Z",
-    "issuer": "did:web:holashchand.github.io:test_project:32b08ca7-9979-4f42-aacc-1d73f3ac5322",
-    "proof": {
-        "created": "2024-06-24T05:59:54Z",
-        "proofPurpose": "assertionMethod",
-        "proof_value": "z5AazgntQCpBkWFWAYGdnx7pxrXKcw1Vq7ZscdnJkWvtE4nCKn1EuxWSoFgNDA3fbnhQpbTPKYZSpLNmEixSDZB9m",
-        "type": "Ed25519Signature2020",
-        "verificationMethod": "did:web:holashchand.github.io:test_project:32b08ca7-9979-4f42-aacc-1d73f3ac5322#key-0"
-    },
-    "type": [
-        "VerifiableCredential",
-        "InsuranceCredential"
-    ]
+    "fullName": "Challarao",
+    "policyName": "Start Insurance Gold Premium",
+    "policyNumber": "13081991",
+    "policyIssuedOn": "2023-04-20T20:48:17.684Z",
+    "policyExpiresOn": "2033-04-20T20:48:17.684Z"
+  }
 }
