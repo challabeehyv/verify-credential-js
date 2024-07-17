@@ -1,29 +1,36 @@
 {
-        "id": "did:rcw:5807f512-0a69-420e-ad05-f688fe590d13",
+        "id": "did:rcw:d1d6be04-6a0f-4ca9-9006-38da125e495d",
         "type": [
             "VerifiableCredential",
             "InsuranceCredential"
         ],
         "proof": {
             "type": "Ed25519Signature2020",
-            "created": "2024-07-17T06:35:02Z",
-            "proofValue": "z5Yifh1WEWA6LpHVKgzEXe9p8YCw1kE9QhshfDU4w4Qq6AFbKnifkLTcfj4mK1LSUT1ZANSpzJA9t5uTasg3fHrQF",
+            "created": "2024-07-17T07:12:45Z",
+            "proofValue": "z4NbZ2XKw2HbsUTkLfGiiVt97X8Kc7ZR1oa2fyQ1ZZ9s7gd8xFeiRwF2Vhke5Juc98AmzV3Ez1YRURpro1nE4YEuC",
             "proofPurpose": "assertionMethod",
-            "verificationMethod": "did:web:api.collab.mosip.net:identity-service:264ea0d2-fbbd-41a4-9ce0-3bcd4017b211#key-0"
+            "verificationMethod": "did:web:api.dev1.mosip.net:identity-service:8ebda1d0-665b-4bb7-abc7-d4bf56b6ee09#key-0"
         },
-        "issuer": "did:web:api.collab.mosip.net:identity-service:264ea0d2-fbbd-41a4-9ce0-3bcd4017b211",
+        "issuer": "did:web:api.dev1.mosip.net:identity-service:8ebda1d0-665b-4bb7-abc7-d4bf56b6ee09",
         "@context": [
             "https://www.w3.org/2018/credentials/v1",
             "https://holashchand.github.io/test_project/insurance-context.json",
             "https://w3id.org/security/suites/ed25519-2020/v1"
         ],
-        "issuanceDate": "2024-07-17T06:35:02.149Z",
-        "expirationDate": "2024-07-20T06:35:02.149Z",
+        "issuanceDate": "2024-07-17T07:12:45.394Z",
+        "expirationDate": "",
         "credentialSubject": {
-            "id": "did:web:api.collab.mosip.net:identity-service:264ea0d2-fbbd-41a4-9ce0-3bcd4017b211",
-            "dob": "1991-08-13",
+            "id": "did:web:api.dev1.mosip.net:identity-service:8ebda1d0-665b-4bb7-abc7-d4bf56b6ee09",
+            "dob": "1968-12-23",
             "type": "InsuranceCredential",
-            "fullName": "Challarao",
+            "email": "abhishek@gmail.com",
+            "gender": "Male",
+            "mobile": "0123456789",
+            "benefits": [
+                "Critical Surgery",
+                "Full body checkup"
+            ],
+            "fullName": "Abhishek Gangwar",
             "policyName": "Start Insurance Gold Premium",
             "policyNumber": "1234567",
             "policyIssuedOn": "2023-04-20T20:48:17.684Z",
